@@ -2,9 +2,9 @@
 def decode_message(s: str, p: str) -> bool:
    
     dp = [[False] * (len(s) + 1) for _ in range(len(p) + 1)]
-    dp[0][0] = True  # An empty pattern matches an empty message
+    dp[0][0] = True  
     
-    # Fill the first row for patterns starting with '*' that match an empty message
+    
     for i in range(1, len(p) + 1):
         if p[i - 1] == '*':
             dp[i][0] = dp[i - 1][0]
