@@ -2,7 +2,10 @@ class Solution:
    
     def getTotalIsles(self, grid: list[list[str]]) -> int:
     #    write your code here
-      class Solution:
+      
+                    
+        return 0
+    class Solution:
    
     def getTotalIsles(self, grid: list[list[str]]) -> int:
     #    write your code here
@@ -25,5 +28,3 @@ class Solution:
                     ans+=1
                     
         return ans
-                    
-        return 0
