@@ -9,9 +9,9 @@ def decode_message(s: str, p: str) -> bool:
         if p[i - 1] == '*':
             dp[i][0] = dp[i - 1][0]
         else:
-            break  # Once we hit a non-* character, we stop filling this row
+            break  
     
-    # Fill the DP table
+  
     for i in range(1, len(p) + 1):
         for j in range(1, len(s) + 1):
             if p[i - 1] == '*':
