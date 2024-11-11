@@ -27,4 +27,3 @@ def decode_message(s: str, p: str) -> bool:
     # The answer is whether the entire pattern matches the entire message
     return dp[len(p)][len(s)]
   
-        return False
